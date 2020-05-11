@@ -288,17 +288,17 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/SoftWare/u3d44/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
     <Reference Include="ILRuntim.Mono.Cecil">
       <HintPath>D:/StudyData/UnityPorjects/ILR_Mono_Demo/Assets/ILRuntime/Plugins/ILRuntim.Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="ILRuntime.Mono.Cecil.Pdb">
-      <HintPath>D:/StudyData/UnityPorjects/ILR_Mono_Demo/Assets/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="ILRuntime.Mono.Cecil.Mdb">
       <HintPath>D:/StudyData/UnityPorjects/ILR_Mono_Demo/Assets/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    <Reference Include="ILRuntime.Mono.Cecil.Pdb">
+      <HintPath>D:/StudyData/UnityPorjects/ILR_Mono_Demo/Assets/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/StudyData/UnityPorjects/ILR_Mono_Demo/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -659,6 +659,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Normal.csproj">
+      <Project>{732C9D11-F889-0117-6AB6-980530E43A59}</Project>
+      <Name>Normal</Name>
+    </ProjectReference>
     <ProjectReference Include="ILRuntime.csproj">
       <Project>{BF1866C0-C13E-1BD8-0D28-2853C60262E0}</Project>
       <Name>ILRuntime</Name>
@@ -666,10 +670,6 @@
     <ProjectReference Include="HotFix.csproj">
       <Project>{8539E9DB-2FF7-0EFC-9556-704E2C45EB6B}</Project>
       <Name>HotFix</Name>
-    </ProjectReference>
-    <ProjectReference Include="Normal.csproj">
-      <Project>{732C9D11-F889-0117-6AB6-980530E43A59}</Project>
-      <Name>Normal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,11 @@
+public class ILRMethodBinder 
+{
+	public static void MethodBinder()
+	{
+#if ILRuntime
+#else
+{code_bind}
+#endif
+	}
+}
+

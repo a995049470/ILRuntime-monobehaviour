@@ -1,0 +1,1 @@
+{"t2":{"m_Data":{"i":123,"str":"abc"}},"go":{"instanceID":23213|UnityEngine.GameObject}}

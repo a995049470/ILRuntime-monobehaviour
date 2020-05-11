@@ -1,0 +1,23 @@
+#if ILRuntime
+        protected static MethodInfo _{name_func};
+#else
+        protected static IMethod m_{name_func};
+#endif    
+    public void {name_func}({desc_var})
+    {
+        {set_objs}
+#if ILRuntime
+        if(_{name_func} == null)
+        {
+                _{name_func} = _Type.GetMethod("{name_func}", BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        }
+        
+         _{name_func}.Invoke(m_Self, {name_objs});
+#else
+        if(m_{name_func} == null)
+        {
+                m_{name_func} = m_Type.GetMethod("{name_func}", {count_var});
+        }
+        m_AppDomain.Invoke(m_{name_func}, m_Self, {name_objs});
+#endif
+    }
